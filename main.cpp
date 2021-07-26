@@ -16,7 +16,12 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
  
- 
+ int
+ bool
+ float
+ double
+ char
+ unsigned int
  
  
  
