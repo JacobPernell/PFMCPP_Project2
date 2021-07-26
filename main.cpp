@@ -67,9 +67,38 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     
+    //int
+    int age = 32;
+    int currentYear = 2021;
+    int numOfIceCream = 5;
+
+    //bool
+    bool isAwake = true;
+    bool isStudent = false;
+    bool dogHasEaten = true;
+
+    //float
+    float velocity = 32.4f;
+    float gpa = 3.8f;
+    float angle = 90.2f;
+
+    //double
+    double tempInC = 22.3;
+    double latitude = 51.5074;
+    double average = 30.5389732;
+ 
+    //char
+    char a = 'a';
+    char b = 'b';
+    char z = 'z';
+
+    //unsigned int
+    unsigned int heightInFeet = 6;
+    unsigned int languagesLearned = 3;
+    unsigned int countriesVisited = 10;
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, age, currentYear, numOfIceCream, isAwake, isStudent, dogHasEaten, velocity, gpa, angle, tempInC, latitude, average, a, b, z, heightInFeet, languagesLearned, countriesVisited); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
