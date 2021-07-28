@@ -115,42 +115,89 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+double averageGPA(double term1, double term2, double term3 = 3.0, double term4 = 3.2)
+{
+    ignoreUnused(term1, term2, term3, term4);
+    return {};
+}
 
 /*
  2)
  */
+void feedDog(int scoopsOfFood = 2, int dogType = 0)
+{
+    ignoreUnused(scoopsOfFood, dogType);
+}
 
 /*
  3)
  */
+bool flightsAreAvailable(int countryID = 34, int departingDate = 8)
+{
+    ignoreUnused(countryID, departingDate);
+    return {};
+}
 
 /*
  4)
  */
+int sumTotalPlugins(int computer = 3)
+{
+    ignoreUnused(computer);
+    return {};
+}
 
 /*
  5)
  */
+void danceBattle(int person1, int person2 = 3)
+{
+    ignoreUnused(person1, person2);
+}
 
 /*
  6)
  */
+float convertToCelsius(float temperature = 54.2f)
+{
+    ignoreUnused(temperature);
+    return {};
+}
 
 /*
  7)
  */
+float calculateTotalRevenue(float income1, float income2, float income3 = 4000.28f)
+{
+    ignoreUnused(income1, income2, income3);
+    return {};
+}
 
 /*
  8)
  */
+void watchTelevision(int channel = 2, double durationInMin = 64.3)
+{
+    ignoreUnused(channel, durationInMin);
+}
 
 /*
  9)
  */
+double calculateMonthlyBudget(double income, double expenses = 2042.65)
+{
+    ignoreUnused(income, expenses);
+    return {};
+}
 
 /*
  10)
  */
+char returnRandomCharWithinRange(int minRange = 3, int maxRange = 34)
+{
+    ignoreUnused(minRange, maxRange);
+    return {};
+}
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -172,27 +219,37 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
+    auto myGPA = averageGPA(3.2, 4.0, 3.1, 3.8);
     
     //2)
+    feedDog(2, 1);
     
     //3)
+    auto canTravelToGermany = flightsAreAvailable(23, 2);
     
     //4)
+    auto pluginsOnMac = sumTotalPlugins(4);
     
     //5)
-    
+    danceBattle(3, 5);
+
     //6)
-    
+    auto currentTempInC = convertToCelsius(23.4f);
+
     //7)
+    auto thisMonthRevenue = calculateTotalRevenue(4000.f, 4394.93f, 200.23f);
     
     //8)
+    watchTelevision(2, 45.5);
     
     //9)
+    auto thisMonthBudget = calculateMonthlyBudget(3940.43);
     
     //10)
+    auto myChar = returnRandomCharWithinRange();
     
     
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, myGPA, canTravelToGermany, pluginsOnMac, currentTempInC, thisMonthRevenue, thisMonthBudget, myChar);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
